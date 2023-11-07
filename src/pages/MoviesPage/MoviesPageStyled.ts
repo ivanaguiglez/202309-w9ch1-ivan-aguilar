@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-styled;
 const MoviesPageStyled = styled.section`
   display: flex;
   flex-direction: column;
