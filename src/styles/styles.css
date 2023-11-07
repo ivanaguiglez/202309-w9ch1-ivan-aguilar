@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.main-container {
+  padding: 20px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.card-description {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
