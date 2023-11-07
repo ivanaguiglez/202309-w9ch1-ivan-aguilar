@@ -1,5 +1,5 @@
 import { MovieStructure } from "../../store/features/movies/types";
-import MovieCardStyled from "./MoviCardStyled";
+import MovieCardStyled from "./MovieCardStyled";
 
 interface MovieCardProps {
   movie: MovieStructure;

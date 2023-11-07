@@ -1,5 +1,5 @@
 import { Navigate, Routes, Route } from "react-router-dom";
-import MoviesPage from "../../pages/MoviesPage/MoviePage";
+import MoviesPage from "../../pages/MoviesPage/MoviesPage";
 import AppStyled from "./AppStyled";
 
 const App = (): React.ReactElement => {

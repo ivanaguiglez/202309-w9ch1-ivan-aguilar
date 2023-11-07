@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 styled;
-const HomePageStyled = styled.section`
+const MoviesPageStyled = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,4 +23,4 @@ const HomePageStyled = styled.section`
     }
   }
 `;
-export default HomePageStyled;
+export default MoviesPageStyled;
