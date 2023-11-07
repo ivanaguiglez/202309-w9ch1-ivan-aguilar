@@ -2,7 +2,7 @@ export interface MovieStructure {
   id: number;
   title: string;
   director: string;
-  image: string;
+  picture: string;
   description: string;
 }
 
