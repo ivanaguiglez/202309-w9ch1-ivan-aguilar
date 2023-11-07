@@ -1,4 +1,4 @@
-const module = {
+module.exports = {
   extends: ["@commitlint/config-conventional"],
   formatter: "@commitlint/format",
   rules: {
@@ -10,5 +10,3 @@ const module = {
     "subject-empty": [2, "always"],
   },
 };
-
-export default module;
