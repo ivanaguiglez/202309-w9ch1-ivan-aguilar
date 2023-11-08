@@ -18,7 +18,7 @@ const MoviesPage = (): React.ReactElement => {
 
   return (
     <MoviesPageStyled>
-      <h2 className="page-title">The Movies List</h2>
+      <h2 className="page-title">Movies to watch this week</h2>
       <main>
         <MoviesList />
       </main>
