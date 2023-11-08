@@ -1,9 +1,9 @@
 export interface MovieStructure {
   id: number;
   title: string;
-  director: string;
   picture: string;
   description: string;
+  isWatched: boolean;
 }
 
 export interface MoviesStateStructure {
