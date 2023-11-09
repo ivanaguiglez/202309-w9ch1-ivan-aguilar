@@ -8,6 +8,7 @@ const App = (): React.ReactElement => {
       <Routes>
         <Route path="/" element={<Navigate to="/movies" />} />
         <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/new-movie-form" element={<NewMovieForm />} />
       </Routes>
     </AppStyled>
   );
