@@ -26,5 +26,20 @@ const MoviesPageStyled = styled.section`
     font-weight: bold;
     margin-top: 25px;
   }
+
+  .navlink {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: ${({ theme }) => theme.color.accent};
+    cursor: pointer;
+  }
+
+  .ul-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 `;
 export default MoviesPageStyled;

@@ -20,11 +20,11 @@ const MoviesPage = (): React.ReactElement => {
   return (
     <MoviesPageStyled>
       <h2 className="page-title">Movies to watch this week</h2>
-      <main>
+      <main className="ul-container">
         <MoviesList />
-        <div className="link-container">
-          <NavLink to={"/New-Movie-Form"}>✏️ Create New Movie ✏️</NavLink>
-        </div>
+        <NavLink className="navlink" to={"/New-Movie-Form"}>
+          🎬 Create New Movie 🎬
+        </NavLink>
       </main>
     </MoviesPageStyled>
   );
