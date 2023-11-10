@@ -21,5 +21,10 @@ const MoviesPageStyled = styled.section`
       padding: 10px;
     }
   }
+
+  div {
+    font-weight: bold;
+    margin-top: 25px;
+  }
 `;
 export default MoviesPageStyled;

@@ -11,7 +11,29 @@ const useMoviesApi = () => {
     return movies;
   }, [apiUrl]);
 
-  return { getMovies };
+  const changeIsWatchedMovies = useCallback(
+    async (movie: MovieStructure) => {
+      const response = await fetch(`${apiUrl}/${movie.id}`, {
+        method: "PATCH",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify({ hasBeenSeen: !movie.isWatched }),
+      });
+      if (!response.ok) return false;
+      return true;
+    },
+    [apiUrl],
+  );
+  const addMovieToApi = async (movie: MovieStructure) => {
+    const response = await fetch(apiUrl, {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(movie),
+    });
+    if (!response.ok) return false;
+    return true;
+  };
+
+  return { getMovies, changeIsWatchedMovies, addMovieToApi };
 };
 
 export default useMoviesApi;

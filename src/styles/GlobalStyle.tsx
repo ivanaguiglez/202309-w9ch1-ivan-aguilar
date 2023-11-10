@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: ${({ theme }) => theme.typography.mainFontFamily};
+    background-color: ${({ theme }) => theme.color.light};
   }
 
   h1, h2 {
@@ -21,6 +22,11 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     padding-left: 0;
     margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    
   }
 `;
 

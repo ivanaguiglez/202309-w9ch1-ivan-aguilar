@@ -4,6 +4,7 @@ export interface MovieStructure {
   picture: string;
   description: string;
   isWatched: boolean;
+  image_url: string;
 }
 
 export interface MoviesStateStructure {
