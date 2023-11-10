@@ -22,9 +22,9 @@ const MoviesPage = (): React.ReactElement => {
       <h2 className="page-title">Movies to watch this week</h2>
       <main>
         <MoviesList />
-        <NavLink to={"/New-Movie-Form"} className="button-create">
-          Create New Movie
-        </NavLink>
+        <div className="link-container">
+          <NavLink to={"/New-Movie-Form"}>✏️ Create New Movie ✏️</NavLink>
+        </div>
       </main>
     </MoviesPageStyled>
   );
